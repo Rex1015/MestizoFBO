@@ -10,7 +10,7 @@ function showContact(){
 
 let form = document.getElementById("contactForm");
 
-if(form.style.display === "none"){
+if(form.style.display === "none" || form.style.display === ""){
 form.style.display = "block";
 }
 else{
@@ -23,6 +23,6 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
 
 event.preventDefault();
 
-alert("Booking request submitted! We will contact you shortly.");
+alert("Thank you! Your booking request has been received. Our team will contact you shortly.");
 
 });
