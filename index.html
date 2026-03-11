@@ -4,84 +4,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mestizo de Sangley FBO</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
 
+<div class="logo-area">
 <img src="images/logo.jpg">
-
 <h1>Mestizo de Sangley FBO</h1>
+</div>
 
 <nav>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#fleet">Fleet</a></li>
-<li><a href="#booking">Booking</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#fleet">Fleet</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
+
 <section class="hero">
 
-<h2>Reliable Turboprop Aviation Services</h2>
+<div class="hero-content">
 
-<p>Professional aircraft charter and aviation services.</p>
+<h2>Opening Philippine Skies</h2>
+
+<p>World-class FBO services at Sangley Point for private, cargo, and aviation missions.</p>
 
 <button onclick="scrollToBooking()">Book a Flight</button>
 
+</div>
+
 </section>
 
-<section id="about">
 
-<h2>About Us</h2>
+<section id="about" class="section">
+
+<h2>About Mestizo de Sangley FBO</h2>
 
 <p>
-Mestizo de Sangley FBO is a proud subsidiary of Codog Aviation, designed to open Philippine skies with inclusive, innovative, and global-standard aviation services.
-Strategically based at Sangley Point, we provide seamless support for general aviation, VIP travelers, airlines, cargo operators, medevac, and military missions. With nationwide reach and worldwide partnerships, Mestizo de Sangley is redefining what it means to be a modern FBO in the Philippines.
+Mestizo de Sangley FBO is a proud subsidiary of Codog Aviation, designed to open
+Philippine skies with inclusive, innovative, and global-standard aviation services.
+Strategically based at Sangley Point, we support general aviation, VIP travelers,
+airlines, cargo operators, medevac missions, and military operations.
 </p>
 
 </section>
 
-<section id="services">
+
+<section id="services" class="section">
 
 <h2>Our Services</h2>
 
-<div class="service">
+<div class="cards">
+
+<div class="card">
 <h3>Aircraft Charter</h3>
 <p>Private charter flights for business and travel.</p>
 </div>
 
-<div class="service">
+<div class="card">
 <h3>Aircraft Management</h3>
 <p>Professional aircraft operations and maintenance coordination.</p>
 </div>
 
-<div class="service">
-<h3>Aerial Services</h3>
+<div class="card">
+<h3>Aerial Operations</h3>
 <p>Aerial survey, transport, and specialized aviation missions.</p>
 </div>
 
-</section>
-
-<section id="fleet">
-
-<h2>Our Fleet</h2>
-
-<div class="aircraft">
-<img src="images/aircraft1.jpg">
-<p>Turbo Prop Aircraft</p>
 </div>
 
 </section>
 
-<section id="booking">
+
+<section id="fleet" class="section">
+
+<h2>Our Fleet</h2>
+
+<div class="fleet">
+
+<div class="fleet-card">
+<img src="images/aircraft1.jpg">
+<p>Turboprop Aircraft</p>
+</div>
+
+<div class="fleet-card">
+<img src="images/aircraft1.jpg">
+<p>Business Aircraft</p>
+</div>
+
+<div class="fleet-card">
+<img src="images/aircraft1.jpg">
+<p>Utility Aircraft</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="booking" class="section booking">
 
 <h2>Online Booking Request</h2>
 
@@ -97,7 +130,7 @@ Strategically based at Sangley Point, we provide seamless support for general av
 
 <select>
 <option>Aircraft Type</option>
-<option>Turbo Prop</option>
+<option>Turboprop</option>
 <option>Light Aircraft</option>
 </select>
 
@@ -107,29 +140,28 @@ Strategically based at Sangley Point, we provide seamless support for general av
 
 </section>
 
-<section id="contact">
+
+<section id="contact" class="section contact">
 
 <h2>Contact Us</h2>
 
 <p>Email: info@fbophilippines.com</p>
-
 <p>Phone: +63 927 647 6909</p>
 
 <button onclick="showContact()">Send Message</button>
 
 <div id="contactForm">
 
-<input type="text" placeholder="Teo Agui">
-
-<input type="email" placeholder="info@fbophilippines.com">
-
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
 <textarea placeholder="Message"></textarea>
 
-<button>Send</button>
+<button>Send Message</button>
 
 </div>
 
 </section>
+
 
 <footer>
 
