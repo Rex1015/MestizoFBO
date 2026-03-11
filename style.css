@@ -1,90 +1,199 @@
 body{
-font-family: Arial;
+font-family:'Poppins',sans-serif;
 margin:0;
-background:#f4f4f4;
+background:#f6f8f7;
+color:#333;
 }
 
-header{
-background:#0b3d91;
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:#0e6b3d;
 color:white;
-padding:15px;
-text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.logo{
-width:80px;
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
 }
 
-nav ul{
-list-style:none;
-padding:0;
+.logo-area img{
+width:50px;
+border-radius:6px;
 }
 
-nav ul li{
-display:inline;
-margin:10px;
-}
-
-nav ul li a{
+.navbar nav a{
 color:white;
 text-decoration:none;
-font-weight:bold;
+margin-left:25px;
+font-weight:500;
+transition:0.3s;
 }
+
+.navbar nav a:hover{
+color:#c9f7dd;
+}
+
+/* HERO */
 
 .hero{
-background:#1e3a5f;
+height:90vh;
+background:linear-gradient(rgba(14,107,61,0.7),rgba(14,107,61,0.7)),
+url("images/aircraft1.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 color:white;
-padding:120px;
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+max-width:600px;
+}
+
+.hero button{
+padding:14px 30px;
+background:#1fd37a;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#17a964;
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 10%;
 text-align:center;
 }
 
-section{
-padding:40px;
-text-align:center;
+/* SERVICES */
+
+.cards{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
 }
 
-.service{
+.card{
 background:white;
-margin:15px;
-padding:20px;
-display:inline-block;
-width:250px;
+padding:30px;
 border-radius:10px;
+width:260px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-.aircraft img{
-width:300px;
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* FLEET */
+
+.fleet{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.fleet-card{
+background:white;
 border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-form input, form select{
-display:block;
-margin:10px auto;
-padding:10px;
-width:250px;
+.fleet-card img{
+width:280px;
+height:180px;
+object-fit:cover;
 }
 
-textarea{
-display:block;
-margin:10px auto;
-padding:10px;
-width:250px;
+.fleet-card:hover{
+transform:scale(1.05);
 }
 
-button{
-padding:10px 20px;
-background:#0b3d91;
+/* BOOKING FORM */
+
+.booking form{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+margin-top:30px;
+}
+
+.booking input,
+.booking select{
+padding:12px;
+width:260px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.booking button{
+padding:12px 30px;
+background:#0e6b3d;
 color:white;
 border:none;
+border-radius:6px;
 cursor:pointer;
 }
 
-#contactForm{
-display:none;
+.booking button:hover{
+background:#0a4f2d;
 }
 
+/* CONTACT */
+
+#contactForm{
+display:none;
+margin-top:20px;
+}
+
+#contactForm input,
+#contactForm textarea{
+display:block;
+margin:10px auto;
+padding:12px;
+width:260px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+/* FOOTER */
+
 footer{
-background:#222;
+background:#0e6b3d;
 color:white;
-padding:20px;
+text-align:center;
+padding:25px;
+margin-top:40px;
 }
